@@ -1,0 +1,194 @@
+  body{
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    width: 100wh;
+   background-image: url('https://media.istockphoto.com/id/1420958692/photo/security-shield-lock-check-mark-and-cloud-dark-iconic-background-for.jpg?s=612x612&w=0&k=20&c=C_scrgFRd5R-7iprZ-AMxrZ90EEf6TZA0n3CftlPY5A=');
+   background-repeat: no-repeat;
+   background-size:100% 100%;
+ }
+ .container{
+   margin: 2rem auto;
+   width: fit-content;
+    display: flex;
+   padding: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+ }
+ #pass{
+    padding: 0;
+    margin: 10px;
+ }
+#pass li {
+    display: flex;
+    width: auto;
+    list-style:none;
+    color: white;
+    font-size: larger;
+ }
+ 
+#out{
+   padding: 5px;
+   margin-top: 10px;
+   color: white;
+}  
+/* 
+#bt button{
+   background-color: #80e88e;
+   border-radius: 9px;
+} */
+
+
+#bt button {
+   display: block;
+   position: relative;
+   padding: 10px 20px;
+   border: none;
+   background: transparent;
+   color: #abfab2;
+   text-transform: uppercase;
+   letter-spacing: 0.1em;
+   outline: none;
+   cursor: pointer;
+   font-weight: bold;
+   border-radius: 5px;
+   box-shadow: inset 0 0 0 2px currentColor;
+   transition: background 0.4s ease, color 0.4s ease;
+}
+
+#bt button:hover {
+   background: #abfab2;
+   color: #07090a;
+}
+
+#bt button::before,
+#bt button::after {
+   content: '';
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   border: 2px solid currentColor;
+   transition: transform 0.4s ease;
+}
+
+#bt button::before {
+   transform: scaleX(1);
+   transform-origin: left;
+}
+
+#bt button::after {
+   transform: scaleY(1);
+   transform-origin: top;
+}
+
+#bt button:hover::before {
+   transform: scaleX(0);
+   transform-origin: right;
+}
+
+#bt button:hover::after {
+   transform: scaleY(0);
+   transform-origin: bottom;
+}
+
+ 
+
+/* For inpput */
+/* From Uiverse.io by G4b413l */ 
+.group {
+   position: relative;
+  }
+  
+  #input {
+   font-size: 16px;
+   padding: 10px 10px 10px 5px;
+   display: block;
+   width: 200px;
+   border: none;
+   border-bottom: 1px solid #abfab2;
+   background: transparent;
+   color: white;
+  }
+  
+  #input:focus {
+   outline: none;
+  }
+  
+  label {
+   color: #cfe5c8;;
+   font-size: 18px;
+   font-weight: normal;
+   position: absolute;
+   pointer-events: none;
+   left: 5px;
+   top: 10px;
+   transition: 0.2s ease all;
+   -moz-transition: 0.2s ease all;
+   -webkit-transition: 0.2s ease all;
+  }
+  
+  #input:focus ~ label, #input:valid ~ label {
+   top: -20px;
+   font-size: 14px;
+   color: #cfe5c8;
+  }
+  
+  .bar {
+   position: relative;
+   display: block;
+   width: 200px;
+  }
+  
+  .bar:before, .bar:after {
+   content: '';
+   height: 2px;
+   width: 0;
+   bottom: 1px;
+   position: absolute;
+   background: #cfe5c8;
+   transition: 0.2s ease all;
+   -moz-transition: 0.2s ease all;
+   -webkit-transition: 0.2s ease all;
+  }
+  
+  .bar:before {
+   left: 50%;
+  }
+  
+  .bar:after {
+   right: 50%;
+  }
+  
+  #input:focus ~ .bar:before, #input:focus ~ .bar:after {
+   width: 50%;
+  }
+  
+  .highlight {
+   position: absolute;
+   height: 60%;
+   width: 100px;
+   top: 25%;
+   left: 0;
+   pointer-events: none;
+   opacity: 0.5;
+  }
+  
+  #input:focus ~ .highlight {
+   animation: inputHighlighter 0.3s ease;
+  }
+  
+  @keyframes inputHighlighter {
+   from {
+    background: #cfe5c8;
+   }
+  
+   to {
+    width: 0;
+    background: transparent;
+   }
+  }
+ 
